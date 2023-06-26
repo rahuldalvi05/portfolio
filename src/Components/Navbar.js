@@ -6,9 +6,9 @@ function Navbar() {
     const [open,setOpen]=useState(false);
     let routes= [
         {name:'Home',to:'/' },
-        {name:'Experience',to:'experience'},
-        {name:'Project',to:'project'},
-        {name:'Education',to:'education'},
+        {name:'Experience',to:'portfolio/experience'},
+        {name:'Project',to:'portfolio/project'},
+        {name:'Education',to:'portfolio/education'},
         // {name:'Resume',to:'resume'},
     ]
     
