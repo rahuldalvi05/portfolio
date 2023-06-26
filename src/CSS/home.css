@@ -1,0 +1,15 @@
+.greeting-main{
+    display: flex;
+    div{
+        display: block;
+    }
+}
+ .greeting-text{
+    flex: 1 1;
+    margin-bottom: 30px;
+}
+.socialMedia{
+    span{
+        padding: 3px;
+    };
+}
