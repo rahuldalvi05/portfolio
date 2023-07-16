@@ -1,7 +1,8 @@
-import { faHtml5, faPython, faReact, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faHtml5, faPython, faReact, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import ProjectImage from '../assets/projects.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBolt } from '@fortawesome/free-solid-svg-icons';
+import { faBolt, faHeart } from '@fortawesome/free-solid-svg-icons';
+import Footer from './Footer';
 function Project() {
 
     const projectList = [
@@ -45,7 +46,7 @@ function Project() {
 
         },
         {
-            name: 'MonumentRecognition',
+            name: 'Monument Recognition',
             url: 'https://github.com/rahuldalvi05/MonumentRecognition',
             techstack: [
                 {
@@ -79,9 +80,15 @@ function Project() {
     ]
 
     const renderProject = projectList.map((item) => (
-        <div key={item.name} className='w-full  p-4 hover:shadow-lg hover:shadow-sky-500/50  bg-sky-100  rounded' >
-            <div>
-                <a href={item.url} target='_blank' className='text-xl sm:text-2xl font-semibold text-sky-900 hover:underline'>{item.name}</a>
+        <div key={item.name} className='w-full md:text-left text-center p-4 shadow-lg shadow-sky-500/50  bg-sky-100  rounded' >
+            <div className='md:flex'>
+                <div className='p-2'>
+                    <a href={item.url} target='_blank' className='text-xl sm:text-2xl font-semibold text-sky-900 underline'>{item.name}</a>
+                </div>
+                <div className='ml-4 p-2'>
+                  <a href={item.url} target='_blank'>  <FontAwesomeIcon icon={faGithub} size='2xl' className='text-black cursor-pointer' /></a>
+                </div>
+
             </div>
             <div className=' mt-3'>
                 <span >
@@ -90,11 +97,9 @@ function Project() {
             </div>
 
             <div >
-                <div className='mt-3  text-left text-xl text-semibold'>
-                    Created on {item.created}
-                </div>
+
                 <div className='w-full mt-3'>
-                    {item.techstack.map((techItem,index) => (
+                    {item.techstack.map((techItem, index) => (
                         <span key={`${techItem.name}+${index}`} className='pr-2'>
                             <FontAwesomeIcon className={techItem.className} icon={techItem.name} size='2xl' />
                         </span>
@@ -128,6 +133,9 @@ function Project() {
 
                 </div>
             </div>
+            <Footer/>
+
+
         </>
     )
 }

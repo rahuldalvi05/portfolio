@@ -6,9 +6,9 @@ function Navbar() {
     const [open,setOpen]=useState(false);
     let routes= [
         {name:'Home',to:'/' },
-        {name:'Experience',to:'portfolio/experience'},
-        {name:'Project',to:'portfolio/project'},
-        {name:'Education',to:'portfolio/education'},
+        {name:'Experience',to:'experience'},
+        {name:'Project',to:'project'},
+        {name:'Education',to:'education'},
         // {name:'Resume',to:'resume'},
     ]
     
@@ -27,7 +27,7 @@ function Navbar() {
                             <span className='px-2'>
                                 <img src={ProfileImage} className='h-10 w-10 rounded-full' alt="Rahul" />
                             </span>
-                        <Link to={'home'}>       <span className='px-1 animate-pulse sm:text-2xl text-xl text-sky-800 font-serif'>{"< Rahul Ramesh Dalvi />"}</span></Link>
+                        <Link to={'home'}>       <span className='px-1 animate-pulse sm:text-2xl text-xl text-sky-800 font-serif'>{"Rahul Ramesh Dalvi"}</span></Link>
                  
                     </div>
                     <div onClick={()=>setOpen(!open)} className='text-3x1 absolute top-padding  right-8 top-6 cursor-pointer md:hidden'>  

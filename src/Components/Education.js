@@ -2,6 +2,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import HSCImage from '../assets/hsc.gif'
 import SPITLogo from '../assets/SPIT_Mumbai_Logo.jpg'
 import { faHeart } from '@fortawesome/free-solid-svg-icons'
+import Footer from './Footer'
 function Education() {
     const WorkExperienceList = [
         {
@@ -24,13 +25,13 @@ function Education() {
         //     percentage: '80.80%',
         //     describe: [
         //         "I have studied Physics, Chemistry and Maths with Computer Science.",
-                
+
         //     ]
 
         // }
     ]
 
-    const renderListExperience = WorkExperienceList.map((item,index) => (
+    const renderListExperience = WorkExperienceList.map((item, index) => (
         <div key={`${item.percentage}+${index}`} className="max-w-full mx-auto  rounded-xl shadow-md border-2 border-sky-900 mt-4 p-4">
             <div className="md:flex">
                 <div className="md:shrink-0 flex justify-center">
@@ -82,11 +83,7 @@ function Education() {
             <div className='p-6 w-full'>
                 {renderListExperience}
             </div>
-            <div className='text-center mb-4'>
-                <p className='text-2xl font-semibold leading-loose text-gray-900 dark:text-white'>
-                    Made with <FontAwesomeIcon icon={faHeart} className='text-red-600' /> by Rahul Dalvi
-                </p>
-            </div>
+            <Footer/>
         </>
     )
 }

@@ -15,12 +15,12 @@ function App() {
         <Navbar />
         <div style={{marginTop:'72px'}}>
         <Routes>
-            <Route path='/' element={<Navigate to="portfolio/home" />}/>
-            <Route path='portfolio/home' element={<Home/>} />
-            <Route path='portfolio/resume' element={<Resume/>} />
-            <Route path='portfolio/education' element={<Education/>} />
-            <Route path='portfolio/experience' element={<WorkExperience/>} />
-            <Route path='portfolio/project' element={<Project/>} />
+            <Route path='/' element={<Navigate to="home" />}/>
+            <Route path='home' element={<Home/>} />
+            <Route path='resume' element={<Resume/>} />
+            <Route path='education' element={<Education/>} />
+            <Route path='experience' element={<WorkExperience/>} />
+            <Route path='project' element={<Project/>} />
         </Routes>
         
         </div>

@@ -4,6 +4,7 @@ import LTIMindtree from '../assets/ltimindtree.png';
 import Spinner from './Spinner';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import Footer from './Footer';
 function WorkExperience() {
     const [spinner, setSpinner] = useState(true);
     useEffect(() => {
@@ -19,7 +20,7 @@ function WorkExperience() {
             role: 'Senior Software Developer',
             companyLogo: LTIMindtree,
             location: 'Mumbai',
-            description: "As a full stack developer, I have expertise in building web pages with Angular, React.js, and HTML, emphasizing reusable components and TypeScript for consuming REST APIs. I have experience in designing and developing Restful APIs using Spring Boot, incorporating Spring Security for security measures. I am skilled in deploying and maintaining applications on AWS and have utilized JIRA for efficient project management. Additionally, I conducted unit testing with Karma to ensure code quality and reliability."
+            description: "As a full stack developer, I have expertise in building web pages with Angular, React.js, and HTML, emphasizing reusable components and TypeScript for consuming REST APIs. I have experience in designing and developing Restful APIs using Spring Boot, incorporating Spring Security for security measures. I am skilled in deploying and maintaining applications on AWS and have utilized JIRA for efficient project management. Additionally, I conducted unit testing with Karma to ensure code quality and reliability. Requirement discussion with Business and providing solutions. Good knowledge of Agile Methodology"
         },
         {
             name: 'LTIMindtree',
@@ -83,11 +84,7 @@ function WorkExperience() {
                             </div>
 
                         </div>
-                        <div className='text-center mb-4'>
-                                <p className='text-2xl font-semibold leading-loose text-gray-900 dark:text-white'>
-                                    Made with <FontAwesomeIcon icon={faHeart}  className='text-red-600'/> by Rahul Dalvi
-                                </p>
-                        </div>
+                        <Footer/>
                     </div>
             }
         </div>

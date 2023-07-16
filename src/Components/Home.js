@@ -4,7 +4,8 @@ import { faTwitter, faGithub, faLinkedin, faInstagram, } from '@fortawesome/free
 import Spinner from './Spinner'
 import { useEffect, useState } from 'react'
 import WhatIDo from './WhatIDo'
-import { faHeart } from '@fortawesome/free-regular-svg-icons'
+import {  faHeart } from '@fortawesome/free-solid-svg-icons';
+import Footer from './Footer'
 
 const Home = () => {
     const [spinner, setSpinner] = useState(true);
@@ -55,11 +56,7 @@ const Home = () => {
 
                         </div>
                         <WhatIDo/>
-                        <div className='text-center mb-4'>
-                                <p className='text-2xl font-semibold leading-loose text-gray-900 dark:text-white'>
-                                    Made with <FontAwesomeIcon icon={faHeart}  className='text-red-600'/> by Rahul Dalvi
-                                </p>
-                        </div>
+                        <Footer/>
                     </div>
                 )
 
