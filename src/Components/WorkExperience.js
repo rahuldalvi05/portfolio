@@ -20,7 +20,7 @@ function WorkExperience() {
             role: 'Senior Software Developer',
             companyLogo: LTIMindtree,
             location: 'Mumbai',
-            description: "As a full stack developer, I have expertise in building web pages with Angular, React.js, and HTML, emphasizing reusable components and TypeScript for consuming REST APIs. I have experience in designing and developing Restful APIs using Spring Boot, incorporating Spring Security for security measures. I am skilled in deploying and maintaining applications on AWS and have utilized JIRA for efficient project management. Additionally, I conducted unit testing with Karma to ensure code quality and reliability. Requirement discussion with Business and providing solutions. Good knowledge of Agile Methodology"
+            description: "As a full stack developer, I have expertise in building web pages with Angular, React.js, and HTML, emphasizing reusable components and TypeScript for consuming REST APIs. I have experience in designing and developing Restful APIs using .Net Core. I am skilled in deploying and maintaining applications on AWS and have utilized JIRA for efficient project management. Additionally, I conducted unit testing with Karma to ensure code quality and reliability. Requirement discussion with Business and providing solutions. Good knowledge of Agile Methodology"
         },
         {
             name: 'LTIMindtree',
